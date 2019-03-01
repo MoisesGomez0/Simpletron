@@ -9,7 +9,8 @@ package simpletron;
  *
  * @author moises_2
  */
-public class Simpletron {
+public class Simpletron
+{
 
     /**
      * @param args the command line arguments
