@@ -12,7 +12,7 @@ package simpletron;
  */
 public class Simpletron
 {
-
+int trun;
     /**
      * @param args the command line arguments
      */
