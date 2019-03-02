@@ -12,13 +12,14 @@ package simpletron;
  */
 public class Simpletron
 {
-int trun;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args)
     {
-        // TODO code application logic here
+        Memoria b=new Memoria();
+        
+        Imprimir.mostrarMemo(b.getMemoria());
     }
     
 }
