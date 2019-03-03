@@ -34,4 +34,9 @@ public class Imprimir
     {
         System.out.println(a);
     }
+    
+    public static void mostrarmjs(Object a)
+    {
+        System.out.println(a);
+    }
 }
