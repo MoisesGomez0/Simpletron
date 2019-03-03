@@ -2,32 +2,37 @@ package simpletron;
 
 public class comandos {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		int x;
-		String numero_comando = Integer.toString(x); //Conversión de int a String
-		numero_comando.charAt(0);//toma del primer número
-		numero_comando.charAt(1);
-		numero_comando.charAt(2);
-		numero_comando.charAt(3);
-		
-		String n="numero_comando.charAt(0)"+"numero_comando.charAt(1)";//Unión de los dos primeros números para formar los comandos
-		switch(n){
-		case "10":
-			resultado= a+b;
-		case "11":
-		    resultado= a-b;
-		case "12":
-		    resultado= a/b;
-		case "13":
-		    resultado= a*b;
-		default:
-		    System.out.println("Opcion no valida");
-		}
-		
-		
-		
-			
-	}
+    public static int instruccion(int a)//este metodo devolvera la instruccion que exista en una palabra del codigo de simpletron
+    {
+
+        String numero_comando = Integer.toString(a); //ConversiÃ³n de int a String
+
+        char x = numero_comando.charAt(0);
+        char y = numero_comando.charAt(1);
+
+        String w = Character.toString(x) + Character.toString(y);
+
+        return Integer.parseInt(w);
+    }
+
+    public static int posicioni(int a)
+    {
+        String numero_comando = Integer.toString(a); //ConversiÃ³n de int a String
+
+        char i = numero_comando.charAt(2);
+        //char j=numero_comando.charAt(3);
+
+        String w = Character.toString(i);
+
+        return Integer.parseInt(w);
+    }
+
+    public static int posicionj(int a)
+    {
+        String numero_comando = Integer.toString(a);
+        char j = numero_comando.charAt(3);
+        String w = Character.toString(j);
+        return Integer.parseInt(w);
+    }
+
 }
