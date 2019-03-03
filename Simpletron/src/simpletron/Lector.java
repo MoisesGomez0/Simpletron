@@ -35,6 +35,7 @@ public class Lector {
                         {
                             b[i][j] = temp;//se llena el espacio
                             a = true;//la variable se pone en true para verificar que se guardó el de que u
+                            Memoria.numeroi++;//se le suma uno a la cantidad de instrucciones que se guarden
                             break;//se sale del for interior
 
                         }
@@ -49,18 +50,10 @@ public class Lector {
         } while (temp != -10);//se verifica que el centilea sea distinto
     }
 
-    public int leerDato()//este metodo lee un numero //12.21 no sirve
+    public int leerDato()//este metodo lee un numero
     {
         int a;
-        try
-        {
-            a = leer.nextInt();
-        } catch (Exception b)
-        {
-            Imprimir.mostrarmsj("Hey, deberias de ingresar un entero");
-            return leerDato();
-        }
-
+        a = leer.nextInt();
         return a;
     }
 }
