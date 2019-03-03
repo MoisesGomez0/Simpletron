@@ -17,9 +17,14 @@ public class Simpletron
      */
     public static void main(String[] args)
     {
+        Lector lee=new Lector();
         Memoria b=new Memoria();
         
         Imprimir.mostrarMemo(b.getMemoria());
+        lee.leerIns(b.getMemoria());
+        
+        Imprimir.mostrarMemo(b.getMemoria());
+        
     }
     
 }

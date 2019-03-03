@@ -9,17 +9,15 @@ package simpletron;
  *
  * @author moises_2
  */
-public class Memoria
-{
-    private int[][] memoria=new int [10][10];
+public class Memoria {
 
-    
+    private int[][] memoria = new int[10][10];
+
     public int[][] getMemoria()
     {
         return memoria;
     }
 
-    
     public void setMemoria(int[][] memoria)
     {
         this.memoria = memoria;
